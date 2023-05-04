@@ -9,6 +9,21 @@ body {
     box-sizing: border-box;
 }
 
+
+.row {
+    /* строка */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-3 {
+    flex: 25% 0 0;
+}
+
+.col-4 {
+    flex: 33.3% 0 0;
+}
+
 .clearfix::after {
     clear: both;
     content: "";
@@ -53,17 +68,105 @@ body {
 .menu {
     display: flex;
     justify-content: space-between;
-    color: #828282;  
+    color: #828282;
     font-size: 18px;
     line-height: 22px;
     border-bottom: 1px solid #828282;
     padding: 33px 0 32px;
 }
 
-.menu a{
+.menu a {
     transition: 0.3s;
 }
 
-.menu a:hover{
-   color: black;
+.menu a:hover {
+    color: black;
 }
+
+/*main*/
+
+.main .main_content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 55px;
+}
+
+.main .main_content h1 {
+    font-size: 47px;
+    line-height: 59px;
+}
+
+.main .main_content p {
+    padding-top: 45px;
+}
+
+.main .main_content span {
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg);
+}
+
+.main .main_img {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.main_about {
+    background-color: #F6F6F6;
+}
+
+.main_about .about h1 {
+    text-align: center;
+    font-size: 34px;
+    line-height: 42px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+
+.main_about .about p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 80px;
+}
+
+
+
+.main_skills_content h1 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.main_skills_content p {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.main_skills .card img {
+    Width: 89px;
+    Height: 88px;
+
+}
+
+.main_skills .icon .col-3 {
+    padding: 74px;
+}
+
+.main_skills .icon .col-3 p {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    padding: 10px;
+}
+
+.main_skills .icon .col-3 .figma{
+ padding: 12px;
+ margin-top: -13px;
+}
+
+
